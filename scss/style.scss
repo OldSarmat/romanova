@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Forum&family=Inter&family=Wix+Madefor+Display:wght@400;500;600&display=swap");
+
+$Forum: "Forum", sans-serif;
+$Inter: "Inter", sans-serif;
+$Wix: "Wix Madefor Display", sans-serif;
+
+// Файл обнуляющих стилей
+@import "_nullstyle.scss";
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--BG, #f9f9fa);
+}
+
+.container {
+    max-width: 1460px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+/*убирает стрелочки в type="number"*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.title {
+    color: var(--Dark-Blue, #223148);
+    font-family: $Forum;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    text-transform: uppercase;
+    @media (max-width: 700px) {
+        font-size: 30px;
+    }
+}
+
+.text {
+    color: var(--Gray-Text, #3b3937);
+    font-family: $Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.text-2 {
+    color: var(--Gray-Text, #3b3937);
+    font-family: $Forum;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+}
+
+.text-3 {
+    color: var(--Gray-Text, #3b3937);
+    font-family: $Forum;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+}
+
+.link {
+    display: inline-block;
+    width: 250px;
+    color: var(--Orange, #e09626);
+    font-family: $Wix;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 480;
+    text-transform: uppercase;
+    &::after {
+        content: url(../img/about_arow.svg);
+        padding-left: 15px;
+    }
+    &:hover {
+        transform: scale(1.03);
+    }
+    &:active {
+        transform: scale(0.97);
+    }
+}
+
+.gold {
+    color: #e09626;
+}
+
+.dark__blue {
+    color: #223148;
+    border-color: #223148;
+}
+
+/*header site*/
+@import "_header.scss";
+
+/*main site*/
+@import "_main.scss";

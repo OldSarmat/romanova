@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'icons';
+  src:  url('../fonts/icons.eot?sz2r8b');
+  src:  url('../fonts/icons.eot?sz2r8b#iefix') format('embedded-opentype'),
+    url('../fonts/icons.ttf?sz2r8b') format('truetype'),
+    url('../fonts/icons.woff?sz2r8b') format('woff'),
+    url('../fonts/icons.svg?sz2r8b#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-geo:before {
+  content: "\e903";
+}
+
+.icon-geo:hover:before {
+  color: #FACD89;
+}
+
+.icon-inst:before {
+  content: "\e900";
+}
+.icon-inst:hover:before {
+  color: #FACD89;
+}
+.icon-tg:before {
+  content: "\e901";
+
+}
+.icon-tg:hover:before {
+  color: #FACD89;
+}
+.icon-wa:before {
+  content: "\e902";
+}
+.icon-wa:hover:before {
+  color: #FACD89;
+}
