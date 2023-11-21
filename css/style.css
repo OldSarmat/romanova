@@ -1211,6 +1211,11 @@ input::-webkit-inner-spin-button {
   line-height: 140%; /* 22.4px */
   text-transform: uppercase;
 }
+@media (max-width: 390px) {
+  .practice__item button {
+    font-size: 15px;
+  }
+}
 .practice__item button:hover {
   border: 1.5px solid #ffaf34;
   background: #ffaf34;
